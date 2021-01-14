@@ -6,83 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Responsive Website</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light nav-color">
+    <header class="header-container">
+        <nav class="navbar navbar-expand-lg navbar-light nav-color  mt-2">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img class="img-fluid w-25" src="images/Logo.png" alt="logo">
+                    <img class="img-fluid w-50" src="images/Logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ml-auto">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#home">Product</a>
-                        <a class="nav-link" href="#about">About us</a>
-                        <a class="nav-link" href="#contact">Contact us</a>
+                    <div class="navbar-nav ml-auto font-weight-bold p-2 navbar-font">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" href="#product">Product</a>
+                        <a class="nav-link active" href="#about">About us</a>
+                        <a class="nav-link active" href="#contact">Contact us</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="container container-fluid mt-5">
+        <div class="container container-fluid mt-5 pb-5">
             <div class="row">
                 <div class="col-md-6">
                     <img class="img-fluid" src="images/hero-img.png" alt="hero image">
                 </div>
-                <div class="col-md-6">
-                    <h1 class="text-uppercase font-weight-bold"><span class="text-orange ">Nike react</span> <br> infinity run 2</h1>
+                <div class="col-md-6 mt-5 hero-text">
+                    <h1 class="text-uppercase font-weight-bold text-size"><span class="text-orange ">Nike react</span> <br> infinity run 2</h1>
                     <p>Still designed to help reduce injury and keep you on the run.</p>
-                    <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
-
+                    <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
-        <section>
-            <div class="container" id="shoes">
-                <h2>CASUAL SHOES</h2>
+        <section id="product">
+            <div class="container">
+                <h2 class="text-uppercase font-weight-bold">CASUAL SHOES</h2>
                 <div class="card-deck">
                     <div class="card">
-                        <img src="images/shoe1.png" class="card-img-top" alt="shoes">
+                        <img src="images/shoe1.png" class="card-img-top nike-shoe" alt="shoes">
                         <div class="card-body">
-                            <h5 class="card-title">Nike Shoe</h5>
+                            <h5 class="card-title font-weight-bold">Nike Shoe</h5>
                             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional.</p>
                             <div class="d-flex justify-content-between">
-                                <h5 class="text-orange">$234</h5>
-                                <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
+                                <h5 class="text-orange price">$234</h5>
+                                <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/shoe2.png" class="card-img-top" alt="shoes">
+                        <img src="images/shoe2.png" class="card-img-top shoe-2" alt="shoes">
                         <div class="card-body">
-                            <h5 class="card-title">Sneakers Skate Shoe </h5>
+                            <h5 class="card-title font-weight-bold">Sneakers Skate Shoe</h5>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <div class="d-flex justify-content-between">
-
-                                <h5 class="text-orange">$320</h5>
-                                <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
+                                <h5 class="text-orange price">$320</h5>
+                                <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="images/shoe3.png" class="card-img-top" alt="shoes">
+                        <img src="images/shoe3.png" class="card-img-top nike-shoe" alt="shoes">
                         <div class="card-body">
-                            <h5 class="card-title">Sneakers Basketball shoe</h5>
+                            <h5 class="card-title font-weight-bold mt-3">Sneakers Basketball shoe</h5>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <div class="d-flex justify-content-between">
-                                <h5 class="text-orange">$350</h5>
-                                <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
+                                <h5 class="text-orange price">$350</h5>
+                                <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 " src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -91,38 +88,38 @@
         </section>
         <section>
             <div class="container" id="shoes">
-                <h2>Formal shoes</h2>
+                <h2 class="text-uppercase font-weight-bold">Formal shoes</h2>
                 <div class="card-deck">
                     <div class="card">
                         <img src="images/formal-shoe1.png" class="card-img-top" alt="shoes">
                         <div class="card-body">
-                            <h5 class="card-title">Prestige High-Cut Leather </h5>
+                            <h5 class="card-title font-weight-bold">Prestige High-Cut Leather </h5>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <div class="d-flex justify-content-between">
-                                <h5 class="text-orange">$120</h5>
-                                <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
+                                <h5 class="text-orange price">$120</h5>
+                                <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/formal-shoe2.png" class="card-img-top" alt="shoes">
                         <div class="card-body">
-                            <h5 class="card-title">Slip-On Formal Shoe</h5>
+                            <h5 class="card-title font-weight-bold">Slip-On Formal Shoe</h5>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <div class="d-flex justify-content-between">
-                                <h5 class="text-orange">$234</h5>
-                                <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
+                                <h5 class="text-orange price">$234</h5>
+                                <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="card">
                         <img src="images/formal-shoe-3.png" class="card-img-top" alt="shoes">
                         <div class="card-body">
-                            <h5 class="card-title">Slip-On Formal Shoe</h5>
+                            <h5 class="card-title font-weight-bold">Slip-On Formal Shoe</h5>
                             <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <div class="d-flex justify-content-between">
-                                <h5 class="text-orange">$234</h5>
-                                <button class="buy-now-button"><img class="img-fluid w-25" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
+                                <h5 class="text-orange price">$234</h5>
+                                <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -139,8 +136,8 @@
                                     <img class="img-fluid w-50" alt="Responsive image" src="images/image 12.png">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Find the Perfect Fit</h5>
+                                    <div class="card-body ms-n1">
+                                        <h5 class="card-title font-weight-bold">Find the Perfect Fit</h5>
                                         <p class="card-text">Everybody is different, which is why we offer styles for every body</p>
                                     </div>
                                 </div>
@@ -152,10 +149,9 @@
                                     <img class="img-fluid w-50" alt="Responsive image" src="images/image 13.png">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Free Exchanges</h5>
+                                    <div class="card-body ms-n1">
+                                        <h5 class="card-title font-weight-bold">Free Exchanges</h5>
                                         <p class="card-text">One of the many reasons you can shop with peace of mind.</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -166,10 +162,9 @@
                                     <img class="img-fluid w-50" alt="Responsive image" src="images/image 14.png">
                                 </div>
                                 <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Contact Our Seller</h5>
+                                    <div class="card-body ms-n1">
+                                        <h5 class="card-title font-weight-bold">Contact Our Seller</h5>
                                         <p class="card-text">They are here to help you. That's quite literally what we pay them for.</p>
-
                                     </div>
                                 </div>
                             </div>
@@ -181,70 +176,75 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="container-fluid">
-        <section id="contact">
-            <div class="section-content">
-                <h1 class="section-header"><i class="fa fa-envelope"></i> Get in <span class="content-header"> Touch with us</span></h1>
-                <h3>We'd love to hear your feedback. What was positive? What can we improve?</h3>
-            </div>
-            <div class="contact-section">
-                <div class="container">
-                    <form>
-                        <div class="card border-primary rounded-0">
-                            <div class="card-header p-0">
-                                <div class="bg-info text-white text-center py-2">
-                                </div>
-                            </div>
-                            <div class="card-body p-3">
-
-                                <!--Body-->
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
-                                        </div>
-                                        <input type="text" class="form-control" placeholder="Your name" required>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
-                                        </div>
-                                        <input type="email" class="form-control" placeholder="Your email address" required>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <div class="input-group mb-2">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
-                                        </div>
-                                        <textarea class="form-control" placeholder="Your message" required></textarea>
-                                    </div>
-                                </div>
-
-                                <div>
-
-                                    <button type="submit" class="btn btn-warning"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </form>
-
-
+        <section class="container-fluid">
+            <div id="contact">
+                <div class="section-content">
+                    <h1 class="section-header"><i class="fa fa-envelope"></i> Get in <span class="content-header"> Touch with us</span></h1>
+                    <h3>We'd love to hear your feedback. What was positive? What can we improve?</h3>
                 </div>
-                </form>
-            </div>
+                <div class="contact-section">
+                    <div class="container">
+                        <form>
+                            <div class="card border-primary rounded-0">
+                                <div class="card-header p-0">
+                                    <div class="bg-info text-white text-center py-2">
+                                    </div>
+                                </div>
+                                <div class="card-body p-3">
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Your name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                                            </div>
+                                            <input type="email" class="form-control" placeholder="Your email address" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group mb-2">
+                                            <div class="input-group-prepend">
+                                                <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                                            </div>
+                                            <textarea class="form-control" placeholder="Your message" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-warning text-white text-uppercase"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
         </section>
-        <section class="text-center mt-5">
-            <small class="text-muted">© 2021 Nike, Inc. All Rights Reserved.Copenhagen,Denamrk.</small>
+    </main>
 
-        </section>
+    <footer id="footer" class="color color-secondary short mt-2">
+        <div class="text-center">
+            <small>© 2021 Nike, Inc. All Rights Reserved.Copenhagen,Denamrk.</small>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-12 center">
+                <ul class="social-icons mb-md">
+                    <li><a href="https://facebook.com" target="_blank" title="FaceBook"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li><a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a href="http://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>

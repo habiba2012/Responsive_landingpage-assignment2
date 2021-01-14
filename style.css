@@ -1,3 +1,8 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
         .container {
             margin-bottom: 100px;
         }
@@ -8,18 +13,42 @@
         
         .nav-color {
             background-color: lightyellow;
+            font-size: 20px;
         }
         
-        .header {
-            background-image: url("background.png");
+        .header-container {
+            background-image: url("images/background.png");
             background-repeat: no-repeat;
             background-color: lightyellow;
         }
         
+        .hero-text {
+            padding-left: 170px;
+        }
+        
+        .text-size {
+            font-size: 50px;
+        }
+        
+        .nike-shoe {
+            width: 320px;
+        }
+        
+        .shoe-2 {
+            width: 310px;
+        }
+        
+        .ms-n1 {
+            margin-left: -5rem !important;
+        }
+        
         .text-orange {
             color: #ff8c00fb;
-            font-size: 25px;
             font-weight: bold;
+        }
+        
+        .price {
+            font-size: 30px;
         }
         
         .buy-now-button {
@@ -88,8 +117,28 @@
         
         .submit {
             font-size: 1.1em;
-            float: right;
             width: 150px;
-            background-color: transparent;
             color: #fff;
+        }
+        
+        #footer {
+            background: hsl(0, 27%, 88%);
+            width: 100%;
+            font-size: 1.2em;
+            height: 10%;
+        }
+        
+        #footer ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2em;
+            margin: 0;
+            padding: 0
+        }
+        
+        #footer li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 5px
         }
