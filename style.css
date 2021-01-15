@@ -133,16 +133,12 @@
             display: inline-block;
             margin: 0 5px
         }
-        /* Small devices (portrait tablets and large phones, 600px and up) */
         
-        @media only screen and (max-width: 600px) {
+        @media(max-width: 992px) {
             .dropdown-right {
                 position: absolute;
                 left: 550px;
                 top: 20px;
-            }
-            .mobile-card {
-                display: flex;
             }
             .hero-text-top {
                 display: flex;
@@ -150,6 +146,30 @@
             }
             .hero-text-top div:first-child {
                 order: 1;
+            }
+            .shoe-container {
+                position: relative;
+                height: 880px;
+                margin-bottom: 850px;
+                text-align: center;
+                padding-left: 50px;
+                padding-top: 16px;
+            }
+            .product-container {
+                max-width: 420px;
+                margin: auto;
+                display: block;
+                text-align: center;
+            }
+            .card-width {
+                width: 400px;
+            }
+            .service-container {
+                text-align: center;
+                margin: auto;
+                margin-top: 90px;
+                width: 500px;
+                padding-right: 100px;
             }
         }
         /* Medium devices (landscape tablets, upto 768px) */
@@ -168,19 +188,18 @@
                 order: 1;
             }
             .shoe-container {
+                position: relative;
                 height: 880px;
                 margin-bottom: 850px;
                 text-align: center;
                 padding-left: 50px;
-                padding-top: 16px!important;
+                padding-top: 16px;
             }
             .product-container {
-                width: 420px;
-                height: 150px;
+                max-width: 420px;
                 margin: auto;
                 display: block;
                 text-align: center;
-                padding-top: 16px!important;
             }
             .card-width {
                 width: 400px;
@@ -192,18 +211,58 @@
                 width: 500px;
                 padding-right: 100px;
             }
-            .service-img {
+        }
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        
+        @media only screen and (max-width: 600px) {
+            .dropdown-right {
+                position: absolute;
+                left: 550px;
+                top: 20px;
+            }
+            .hero-text-top {
                 display: flex;
                 flex-direction: column;
             }
-            .service-img div:first-child {
+            .hero-text-top div:first-child {
                 order: 1;
+            }
+            .shoe-container {
+                position: relative;
+                height: 880px;
+                margin-bottom: 850px;
+                text-align: center;
+                padding-left: 50px;
+                padding-top: 16px;
+            }
+            .product-container {
+                max-width: 420px;
+                margin: auto;
+                display: block;
+                text-align: center;
+            }
+            .ecommerce-row {
+                display: flex;
+                flex-flow: column;
+            }
+            .service-img {
+                order: 1;
+            }
+            .card-width {
+                width: 400px;
+                order: 2;
+            }
+            .service-container {
+                text-align: center;
+                margin: auto;
+                margin-top: 90px;
+                width: 500px;
+                padding-right: 100px;
             }
         }
         /*--Media Queries--*/
-        
-        @media(max-width: 992px) {}
+        /* @media(max-width: 992px) {}
         
         @media(max-width: 768px) {}
         
-        @media(max-width: 576px) {}
+        @media(max-width: 576px) {} */
