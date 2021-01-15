@@ -13,13 +13,13 @@
 
 <body>
     <header class="header-container">
-        <nav class="navbar navbar-expand-lg navbar-light nav-color  mt-2">
+        <nav class="navbar navbar-expand-lg navbar-light nav-color sticky-top  mt-2">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img class="img-fluid w-50" src="images/Logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler dropdown-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml-auto font-weight-bold p-2 navbar-font">
@@ -37,7 +37,7 @@
                     <img class="img-fluid" src="images/hero-img.png" alt="hero image">
                 </div>
                 <div class="col-md-6 mt-5 hero-text">
-                    <h1 class="text-uppercase font-weight-bold text-size"><span class="text-orange ">Nike react</span> <br> infinity run 2</h1>
+                    <h1 class="text-uppercase display-5 font-weight-bold"><span class="text-orange ">Nike react</span> <br> infinity run 2</h1>
                     <p>Still designed to help reduce injury and keep you on the run.</p>
                     <button class="buy-now-button text-uppercase"><img class="img-fluid w-25 mr-2" src="images/shopping-cart 1.png" alt="shopping-cart-icon">Buy Now</button>
                 </div>
@@ -46,11 +46,11 @@
     </header>
 
     <main>
-        <section id="product">
+        <section id="product" class="shoe-container">
             <div class="container">
-                <h2 class="text-uppercase font-weight-bold">CASUAL SHOES</h2>
-                <div class="card-deck">
-                    <div class="card">
+                <h2 class="text-uppercase font-weight-bold ">CASUAL SHOES</h2>
+                <div class="card-deck product-container">
+                    <div class="card ">
                         <img src="images/shoe1.png" class="card-img-top nike-shoe" alt="shoes">
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Nike Shoe</h5>
@@ -86,10 +86,10 @@
                 </div>
             </div>
         </section>
-        <section>
-            <div class="container mobile-container" id="shoes">
+        <section class="shoe-container">
+            <div class="container" id="shoes">
                 <h2 class="text-uppercase font-weight-bold">Formal shoes</h2>
-                <div class="card-deck ">
+                <div class="card-deck product-container ">
                     <div class="card ">
                         <img src="images/formal-shoe1.png" class="card-img-top" alt="shoes">
                         <div class="card-body">
@@ -126,14 +126,14 @@
                 </div>
             </div>
         </section>
-        <section class="container">
-            <div class="row">
-                <div class="col-6 container-width">
+        <section class="container ">
+            <div class="row ">
+                <div class="col-6 service-container ">
                     <div class="d-flex flex-column">
                         <div class="card mb-3 card-width" style="max-width: 500px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img class="img-fluid w-50" alt="Responsive image" src="images/image 12.png">
+                                    <img class="img-fluid w-50 " alt="Responsive image" src="images/image 12.png">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3" style="max-width: 500px;">
+                        <div class="card mb-3 card-width" style="max-width: 500px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img class="img-fluid w-50" alt="Responsive image" src="images/image 13.png">
@@ -156,7 +156,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card mb-3" style="max-width: 500px;">
+                        <div class="card mb-3 card-width " style="max-width: 500px;">
                             <div class="row g-0">
                                 <div class="col-md-4">
                                     <img class="img-fluid w-50" alt="Responsive image" src="images/image 14.png">
@@ -171,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-md-offset-2">
+                <div class="col-md-6 col-md-offset-2 service-img">
                     <img class="img-fluid" alt="Responsive image" src="images/our-service-img.png">
                 </div>
             </div>
@@ -215,8 +215,8 @@
                                             <textarea class="form-control" placeholder="Your message" required></textarea>
                                         </div>
                                     </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-warning text-white text-uppercase"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-warning text-white text-uppercase "><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
                                     </div>
                                 </div>
                             </div>
@@ -226,12 +226,12 @@
         </section>
     </main>
 
-    <footer id="footer" class="color color-secondary short mt-2">
+    <footer id="footer" class="color color-secondary short mt-5">
         <div class="text-center">
-            <small>© 2021 Nike, Inc. All Rights Reserved.Copenhagen,Denamrk.</small>
+            <small>© 2021 Nike, Inc. All Rights Reserved.Copenhagen,Denmark.</small>
         </div>
 
-        <div class="row ">
+        <div class="row">
             <div class="col-md-12 center">
                 <ul class="social-icons mb-md">
                     <li><a href="https://facebook.com" target="_blank" title="FaceBook"><i class="fab fa-facebook"></i></a>
