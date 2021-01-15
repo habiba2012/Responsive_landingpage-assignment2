@@ -172,6 +172,7 @@
                 margin-bottom: 850px;
                 text-align: center;
                 padding-left: 50px;
+                padding-top: 16px!important;
             }
             .product-container {
                 width: 420px;
@@ -179,6 +180,7 @@
                 margin: auto;
                 display: block;
                 text-align: center;
+                padding-top: 16px!important;
             }
             .card-width {
                 width: 400px;
@@ -188,6 +190,7 @@
                 margin: auto;
                 margin-top: 90px;
                 width: 500px;
+                padding-right: 100px;
             }
             .service-img {
                 display: flex;
